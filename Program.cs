@@ -1,4 +1,10 @@
-﻿var brain = new Brain(new IntakeSensor { });
+﻿var brain =
+    new Brain(new IntakeSensor
+    {
+        Ears = new List<SelfLearningAI.Sensors.Ear> { },
+        Eyes = new List<SelfLearningAI.Sensors.Eye> { },
+    });
+
 var time2Sleep = false;
 while (true)
 {
