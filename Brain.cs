@@ -34,7 +34,7 @@ internal class Brain
         throw new NotImplementedException();
     }
 
-    internal bool IsSleepy(object threadsOfDecisions)
+    internal bool NeedsSleep(object threadsOfDecisions)
     {
         var isSleepy = false;
         var mistakesCount = CheckMistakeCount(threadsOfDecisions);

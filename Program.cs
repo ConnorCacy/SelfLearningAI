@@ -14,7 +14,7 @@ while (true)
     {
         observations = brain.Observe();
         threadsOfDecisions = brain.Decide(observations, threadsOfDecisions);
-        time2Sleep = brain.IsSleepy(threadsOfDecisions);
+        time2Sleep = brain.NeedsSleep(threadsOfDecisions);
     }
     brain.Sleep(threadsOfDecisions);
     time2Sleep = false;
